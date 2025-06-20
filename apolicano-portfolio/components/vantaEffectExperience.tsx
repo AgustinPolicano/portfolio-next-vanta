@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 // @ts-ignore
-import TOPOLOGY from "vanta/dist/vanta.topology.min.js";
+import WAVES from "vanta/dist/vanta.waves.min";
 
 export default function VantaEffectExperience() {
   const ref = useRef<HTMLDivElement>(null);
@@ -13,11 +13,14 @@ export default function VantaEffectExperience() {
   useEffect(() => {
     if (!vantaEffect && ref.current) {
       setVantaEffect(
-        TOPOLOGY({
+        WAVES({
           el: ref.current,
           THREE,
-          color: 0x313c2f,
-          backgroundColor: 0x0,
+          color: 0x101014,
+          zoom: 0.7,
+          shiness: 0,
+          waveSpeed: 0,
+          backgroundColor: 0x101014,
         })
       );
     }
