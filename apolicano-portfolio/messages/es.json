@@ -1,0 +1,150 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Agustin Policano",
+    "subtitle": "Desarrollador Frontend",
+    "viewProjects": "Ver Proyectos"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Una selección de mi trabajo más reciente, construido con tecnologías modernas y diseño limpio.",
+    "viewDetails": "MÁS DETALLES",
+    "items": {
+      "archivio": {
+        "name": "Archivio (En proceso)",
+        "type": "IA & WhatsApp Bot",
+        "description": "Bot de IA que utiliza RAG (Retrieval Augmented Generation) para procesar documentos subidos por el usuario y responder consultas vía WhatsApp sobre la información contenida."
+      },
+      "alchimie": {
+        "name": "Alchimie",
+        "type": "Landing Page",
+        "description": "Landing page moderna para una marca de perfumería, con diseño elegante y experiencia de usuario optimizada."
+      },
+      "beersech": {
+        "name": "Beersech",
+        "type": "Sitio Web Corporativo",
+        "description": "Sitio web para agencia digital con enfoque en servicios de marketing y desarrollo web."
+      },
+      "ecochoice": {
+        "name": "EcoChoice",
+        "type": "Sitio Web Comercial",
+        "description": "Plataforma web para empresa de paisajismo y diseño de espacios verdes."
+      },
+      "dakari": {
+        "name": "Dakari",
+        "type": "Migración Tecnológica",
+        "description": "Migración completa de WordPress a Next.js, mejorando rendimiento y experiencia de usuario."
+      },
+      "descriptio": {
+        "name": "Descriptio",
+        "type": "Herramienta IA",
+        "description": "Generador inteligente de descripciones utilizando inteligencia artificial, optimizado para múltiples casos de uso."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "jobs": {
+      "techcorp": {
+        "company": "Omint",
+        "role": "Frontend Developer SSR",
+        "duration": "Mar 2023 - Actualidad",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Desarrollo y mantenimiento del proyecto Médico Online, plataforma de telemedicina iniciada antes de la pandemia.",
+          "Migración de código de JavaScript y jQuery a React (18.3.1) con Redux y Tokbox.",
+          "Participación en el desarrollo con .NET y C# para la lógica de backend.",
+          "Uso de Angular v13 y manejo de bases de datos con SQL (2022)."
+        ]
+      },
+      "innosoft": {
+        "company": "Qubik Digital",
+        "role": "Angular Developer Spartacus (SAP)",
+        "duration": "May 2022 - Oct 2022",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Desarrollo en Spartacus, un framework basado en Angular para SAP Commerce.",
+          "Implementación de nuevas funcionalidades y optimización de componentes en Spartacus para mejorar la experiencia del usuario.",
+          "Participación en los proyectos Deprati (Vue.js) y Promesa (Spartacus), colaborando en el diseño e implementación de interfaces interactivas y dinámicas.",
+          "Aplicación de metodología SCRUM con Jira y uso de Bitbucket para la gestión de código y versionado."
+        ]
+      },
+      "accusys": {
+        "company": "Accusys Technology",
+        "role": "Angular Developer SSR",
+        "duration": "Oct 2021 - Abr 2022",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Desarrollo e integración de módulos en Angular v11 para una plataforma de pagos bancarios.",
+          "Trabajo en Software Factory con rotación entre proyectos.",
+          "Implementación de metodología SCRUM para mejor seguimiento del trabajo diario.",
+          "Gestión de repositorios mediante TFS 2018 y Git para manejo de ramas."
+        ]
+      },
+      "seenka": {
+        "company": "Seenka",
+        "role": "Angular Developer",
+        "duration": "Feb 2022 - Abr 2022",
+        "location": "Freelance a tiempo definido",
+        "responsibilities": [
+          "Trabajo freelance utilizando metodología SCRUM con gestión de tickets.",
+          "Desarrollo en proyecto de marketing para empresas con arquitectura de Micro-Servicios y GraphQL.",
+          "Trabajo con Angular (V9) en conjunto con el encargado del frontend.",
+          "Gestión de repositorios mediante GitLab y documentación con Notion."
+        ]
+      },
+      "banhaia": {
+        "company": "Banhaia",
+        "role": "Angular Developer Trainee",
+        "duration": "May 2021 - Sept 2021",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Primera experiencia profesional con capacitación en Angular (V8).",
+          "Aprendizaje de fundamentos de programación, Git y metodologías SCRUM.",
+          "Desarrollo de trabajo en equipo y habilidades de colaboración.",
+          "Contribución en la creación de interfaces mediante Figma."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "description": "Herramientas y tecnologías que uso para desarrollar productos modernos y escalables.",
+    "frontend": {
+      "title": "Frontend",
+      "description": "React, Next.js, Tailwind y diseño UI/UX."
+    },
+    "backend": {
+      "title": "Backend",
+      "description": "Node.js, REST APIs, MongoDB y PostgreSQL."
+    },
+    "fullstack": {
+      "title": "Full-Stack",
+      "description": "Productos escalables end-to-end."
+    },
+    "design": {
+      "title": "Diseño UI",
+      "description": "Figma, wireframes y prototipado ágil."
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "description": "Siempre estoy interesado en nuevas oportunidades, colaboraciones o simplemente una charla.",
+    "location": "Buenos Aires — Disponible para freelance",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "downloadCV": "Descargar CV",
+    "inspirational": "Construyamos algo grandioso juntos."
+  },
+  "language": {
+    "es": "Español",
+    "en": "English"
+  }
+} 

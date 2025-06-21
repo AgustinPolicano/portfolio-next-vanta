@@ -1,0 +1,145 @@
+{
+  "navigation": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Agustin Policano",
+    "subtitle": "Frontend Developer",
+    "viewProjects": "View Projects"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "A selection of my most recent work, built with modern technologies and clean design.",
+    "viewDetails": "VIEW DETAILS",
+    "items": {
+      "archivio": {
+        "name": "Archivio (In progress)",
+        "type": "AI & WhatsApp Bot",
+        "description": "AI bot using RAG (Retrieval Augmented Generation) to process user-uploaded documents and respond to queries via WhatsApp about the contained information."
+      },
+      "alchimie": {
+        "name": "Alchimie",
+        "type": "Landing Page",
+        "description": "Modern landing page for a perfume brand, featuring elegant design and optimized user experience."
+      },
+      "beersech": {
+        "name": "Beersech",
+        "type": "Corporate Website",
+        "description": "Website for a digital agency focusing on marketing and web development services."
+      },
+      "ecochoice": {
+        "name": "EcoChoice",
+        "type": "Commercial Website",
+        "description": "Web platform for a landscaping and green spaces design company."
+      },
+      "dakari": {
+        "name": "Dakari",
+        "type": "Technology Migration",
+        "description": "Complete migration from WordPress to Next.js, improving performance and user experience."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": {
+      "techcorp": {
+        "company": "Omint",
+        "role": "SSR Frontend Developer",
+        "duration": "Mar 2023 - Present",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Development and maintenance of the Médico Online project, a telemedicine platform initiated before the pandemic.",
+          "Migration of JavaScript and jQuery code to React (18.3.1) with Redux and Tokbox.",
+          "Participation in development with .NET and C# for backend logic.",
+          "Use of Angular v13 and database management with SQL (2022)."
+        ]
+      },
+      "innosoft": {
+        "company": "Qubik Digital",
+        "role": "Angular Developer Spartacus (SAP)",
+        "duration": "May 2022 - Oct 2022",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Development in Spartacus, an Angular-based framework for SAP Commerce.",
+          "Implementation of new features and component optimization in Spartacus to improve user experience.",
+          "Participation in Deprati (Vue.js) and Promesa (Spartacus) projects, collaborating in the design and implementation of interactive and dynamic interfaces.",
+          "Application of SCRUM methodology with Jira and use of Bitbucket for code management and versioning."
+        ]
+      },
+      "accusys": {
+        "company": "Accusys Technology",
+        "role": "Angular Developer SSR",
+        "duration": "Oct 2021 - Apr 2022",
+        "location": "Freelance with time defined",
+        "responsibilities": [
+          "Development and integration of modules in Angular v11 for a banking payments platform.",
+          "Work in Software Factory with project rotation.",
+          "Implementation of SCRUM methodology for better daily work tracking.",
+          "Repository management through TFS 2018 and Git for branch management."
+        ]
+      },
+      "seenka": {
+        "company": "Seenka",
+        "role": "Angular Developer",
+        "duration": "Feb 2022 - Apr 2022",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Freelance work using SCRUM methodology with ticket management.",
+          "Development in marketing project for companies with Micro-Services architecture and GraphQL.",
+          "Work with Angular (V9) in collaboration with the frontend lead.",
+          "Repository management through GitLab and documentation with Notion."
+        ]
+      },
+      "banhaia": {
+        "company": "Banhaia",
+        "role": "Angular Developer Trainee",
+        "duration": "May 2021 - Sept 2021",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "First professional experience with training in Angular (V8).",
+          "Learning of programming fundamentals, Git, and SCRUM methodologies.",
+          "Development of teamwork and collaboration skills.",
+          "Contribution to interface creation using Figma."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Tools and technologies I use to develop modern and scalable products.",
+    "frontend": {
+      "title": "Frontend",
+      "description": "React, Next.js, Tailwind and UI/UX design."
+    },
+    "backend": {
+      "title": "Backend",
+      "description": "Node.js, REST APIs, MongoDB and PostgreSQL."
+    },
+    "fullstack": {
+      "title": "Full-Stack",
+      "description": "End-to-end scalable products."
+    },
+    "design": {
+      "title": "UI Design",
+      "description": "Figma, wireframes and agile prototyping."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always interested in new opportunities, collaborations, or just a chat.",
+    "location": "Buenos Aires — Available for freelance",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "downloadCV": "Download CV",
+    "inspirational": "Let's build something great together."
+  },
+  "language": {
+    "es": "Español",
+    "en": "English"
+  }
+} 
