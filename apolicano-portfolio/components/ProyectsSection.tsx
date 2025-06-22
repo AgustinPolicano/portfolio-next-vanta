@@ -84,7 +84,7 @@ export default function ProjectsShowcase() {
         />
 
         {/* Embla Carousel */}
-        <div ref={emblaRef} className="overflow-hidden flex-1 flex items-center">
+        <div ref={emblaRef} className="overflow-hidden items-center">
           <div className="flex gap-6">
             {projects.map((project, idx) => (
               <motion.div
@@ -93,7 +93,8 @@ export default function ProjectsShowcase() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="snap-center shrink-0 w-[40%] sm:w-[60%] md:w-[40%] rounded-2xl group border border-white/10 p-4 backdrop-blur bg-black/60 shadow-lg h-[350px] flex flex-col"
+               className="snap-start shrink-0 basis-full sm:basis-full md:basis-[60%] lg:basis-[40%] rounded-2xl group border border-white/10 p-4 backdrop-blur bg-black/60 shadow-lg h-[350px] flex flex-col"
+
               >
                 <Card className="bg-transparent border-none shadow-none flex-1 flex flex-col">
                   <div className="relative w-full h-40 rounded-lg overflow-hidden mb-3">
