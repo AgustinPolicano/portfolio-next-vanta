@@ -72,6 +72,30 @@ export default function ExperienceTimeline() {
         t("experience.jobs.accusys.responsibilities.3"),
       ],
     },
+    {
+      company: t("experience.jobs.seenka.company"),
+      role: t("experience.jobs.seenka.role"),
+      duration: t("experience.jobs.seenka.duration"),
+      location: t("experience.jobs.seenka.location"),
+      responsibilities: [
+        t("experience.jobs.seenka.responsibilities.0"),
+        t("experience.jobs.seenka.responsibilities.1"),
+        t("experience.jobs.seenka.responsibilities.2"),
+        t("experience.jobs.seenka.responsibilities.3"),
+      ],
+    },
+    {
+      company: t("experience.jobs.banhaia.company"),
+      role: t("experience.jobs.banhaia.role"),
+      duration: t("experience.jobs.banhaia.duration"),
+      location: t("experience.jobs.banhaia.location"),
+      responsibilities: [
+        t("experience.jobs.banhaia.responsibilities.0"),
+        t("experience.jobs.banhaia.responsibilities.1"),
+        t("experience.jobs.banhaia.responsibilities.2"),
+        t("experience.jobs.banhaia.responsibilities.3"),
+      ],
+    },
   ];
 
   return (
@@ -89,7 +113,7 @@ export default function ExperienceTimeline() {
           <div className="absolute left-[20px] top-[30px] bottom-10 w-[2px] bg-white/20" />
           <motion.div
             initial={{ height: "0%" }}
-            animate={{ height: "100%" }}
+            animate={{ height: "96%" }}
             transition={{ duration: 2, ease: "easeInOut" }}
             className="absolute left-[20px] top-[30px] w-[2px] bg-gradient-to-b from-red-500 via-red-400 to-red-300 origin-top shadow-[0_0_10px_rgba(239,68,68,0.5)]"
           />

@@ -25,7 +25,7 @@ export default function LanguageToggle() {
   
     {/* Tooltip */}
     <span className="hidden md:block absolute right-full top-1/2 -translate-y-1/2 mr-2 px-2 py-1 text-xs text-black bg-white rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none shadow-lg">
-      {t('language.title') || "Language"}
+      {t('languageSelector')}
     </span>
   
     {/* Dropdown (igual que antes) */}

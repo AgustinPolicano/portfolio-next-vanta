@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, Download, MapPin, Twitter } from "lucide-react";
 import SectionHeader from "@/components/ui/section-header";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -38,19 +38,24 @@ export default function ContactSection() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-6">
-          <Button variant="outline" asChild>
-            <a href="mailto:agustin@example.com" className="flex items-center gap-2">
+          <Button variant="outline" asChild className="w-[140px]">
+            <a href="mailto:agustinpolicanodev@gmail.com" className="flex items-center gap-2">
               <Mail className="w-4 h-4" /> {t("contact.email")}
             </a>
           </Button>
-          <Button variant="outline" asChild>
-            <a href="https://github.com" target="_blank" className="flex items-center gap-2">
+          <Button variant="outline" asChild className="w-[140px]">
+            <a href="https://github.com/AgustinPolicano" target="_blank" className="flex items-center gap-2">
               <Github className="w-4 h-4" /> {t("contact.github")}
             </a>
           </Button>
-          <Button variant="outline" asChild>
-            <a href="https://linkedin.com" target="_blank" className="flex items-center gap-2">
+          <Button variant="outline" asChild className="w-[140px]">
+            <a href="https://www.linkedin.com/in/agustin-policano/" target="_blank" className="flex items-center gap-2">
               <Linkedin className="w-4 h-4" /> {t("contact.linkedin")}
+            </a>
+          </Button>
+          <Button variant="outline" asChild className="w-[140px]">
+            <a href="https://x.com/PolicanoAgustin" target="_blank" className="flex items-center gap-2">
+              <Twitter className="w-4 h-4" /> {t("contact.twitter")}
             </a>
           </Button>
         </div>
@@ -64,7 +69,7 @@ export default function ContactSection() {
       </motion.div>
 
       {/* Frase inspiradora */}
-      <p className="absolute bottom-4 text-xs italic text-white/30">
+      <p className="absolute bottom-4 text-xs italic text-white/30 z-10">
         {t("contact.inspirational")}
       </p>
     </motion.section>

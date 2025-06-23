@@ -19,27 +19,32 @@
       "archivio": {
         "name": "Archivio (In progress)",
         "type": "AI & WhatsApp Bot",
-        "description": "AI bot using RAG (Retrieval Augmented Generation) to process user-uploaded documents and respond to queries via WhatsApp about the contained information."
+        "description": "AI bot using RAG (Retrieval Augmented Generation) to process user-uploaded documents and respond to queries via WhatsApp. Frontend built with Vite, Node.js backend, and PostgreSQL database hosted on Railway."
       },
       "alchimie": {
         "name": "Alchimie",
         "type": "Landing Page",
-        "description": "Modern landing page for a perfume brand, featuring elegant design and optimized user experience."
+        "description": "Modern landing page for a perfume brand, developed as a fullstack application with Next.js (integrated frontend and backend) and Railway database. Features elegant design and optimized user experience."
       },
       "beersech": {
         "name": "Beersech",
         "type": "Corporate Website",
-        "description": "Website for a digital agency focusing on marketing and web development services."
+        "description": "Corporate website for a digital agency built with Next.js, focusing on marketing and web development services with modern and responsive design."
       },
       "ecochoice": {
         "name": "EcoChoice",
-        "type": "Commercial Website",
-        "description": "Web platform for a landscaping and green spaces design company."
+        "type": "WordPress Optimization",
+        "description": "Complete WordPress optimization for a landscaping and green spaces design company. Significant improvements in SEO and loading speed according to Lighthouse metrics."
       },
       "dakari": {
         "name": "Dakari",
         "type": "Technology Migration",
-        "description": "Complete migration from WordPress to Next.js, improving performance and user experience."
+        "description": "Complete website migration from WordPress to Next.js, achieving substantial improvements in performance, loading speed, and overall user experience."
+      },
+      "ffdiamond": {
+        "name": "FFDiamond",
+        "type": "E-commerce Platform",
+        "description": "FreeFire diamonds purchase platform built with Vite. Implementation of payment systems with MercadoPago and Stripe, bank transfer verification, and complete admin panel."
       }
     }
   },
@@ -111,21 +116,29 @@
   "skills": {
     "title": "Skills",
     "description": "Tools and technologies I use to develop modern and scalable products.",
-    "frontend": {
-      "title": "Frontend",
-      "description": "React, Next.js, Tailwind and UI/UX design."
+    "typescript": {
+      "title": "TypeScript & JavaScript",
+      "description": "I work with both languages depending on the project, prioritizing best practices and static typing with TypeScript."
     },
-    "backend": {
-      "title": "Backend",
-      "description": "Node.js, REST APIs, MongoDB and PostgreSQL."
+    "uiux": {
+      "title": "UI/UX & Design",
+      "description": "I design functional and modern interfaces in Figma and implement them with Tailwind, Shadcn or Angular Material."
     },
-    "fullstack": {
-      "title": "Full-Stack",
-      "description": "End-to-end scalable products."
+    "devops": {
+      "title": "DevOps & Deploy",
+      "description": "I use Vercel, VPS with Nginx and Docker for deployment. I have experience in configuration and maintenance of production environments."
     },
-    "design": {
-      "title": "UI Design",
-      "description": "Figma, wireframes and agile prototyping."
+    "tools": {
+      "title": "Tools & Workflow",
+      "description": "Git, GitHub, VSCode extensions, terminal and other key tools for agile and professional development."
+    },
+    "architecture": {
+      "title": "Logic & Architecture",
+      "description": "Design of scalable code structures, design patterns and software architectures that facilitate maintenance and growth of applications."
+    },
+    "automation": {
+      "title": "APIs & Automation",
+      "description": "REST API integration, process automation and script development to optimize workflows and connect systems."
     }
   },
   "contact": {
@@ -135,11 +148,13 @@
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn",
+    "twitter": "Twitter",
     "downloadCV": "Download CV",
     "inspirational": "Let's build something great together."
   },
   "language": {
     "es": "Español",
     "en": "English"
-  }
+  },
+  "languageSelector": "Language"
 } 

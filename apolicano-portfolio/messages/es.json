@@ -19,32 +19,37 @@
       "archivio": {
         "name": "Archivio (En proceso)",
         "type": "IA & WhatsApp Bot",
-        "description": "Bot de IA que utiliza RAG (Retrieval Augmented Generation) para procesar documentos subidos por el usuario y responder consultas vía WhatsApp sobre la información contenida."
+        "description": "Bot de IA que utiliza RAG (Retrieval Augmented Generation) para procesar documentos subidos por el usuario y responder consultas vía WhatsApp. Frontend desarrollado con Vite, backend en Node.js y base de datos PostgreSQL en Railway."
       },
       "alchimie": {
         "name": "Alchimie",
         "type": "Landing Page",
-        "description": "Landing page moderna para una marca de perfumería, con diseño elegante y experiencia de usuario optimizada."
+        "description": "Landing page moderna para una marca de perfumería, desarrollada como aplicación fullstack con Next.js (frontend y backend integrados) y base de datos en Railway. Diseño elegante y experiencia de usuario optimizada."
       },
       "beersech": {
         "name": "Beersech",
         "type": "Sitio Web Corporativo",
-        "description": "Sitio web para agencia digital con enfoque en servicios de marketing y desarrollo web."
+        "description": "Sitio web corporativo para agencia digital desarrollado con Next.js, enfocado en servicios de marketing y desarrollo web con diseño moderno y responsive."
       },
       "ecochoice": {
         "name": "EcoChoice",
-        "type": "Sitio Web Comercial",
-        "description": "Plataforma web para empresa de paisajismo y diseño de espacios verdes."
+        "type": "Optimización WordPress",
+        "description": "Optimización completa de sitio WordPress para empresa de paisajismo y diseño de espacios verdes. Mejoras significativas en SEO y velocidad de carga según métricas de Lighthouse."
       },
       "dakari": {
         "name": "Dakari",
         "type": "Migración Tecnológica",
-        "description": "Migración completa de WordPress a Next.js, mejorando rendimiento y experiencia de usuario."
+        "description": "Migración completa de sitio web desde WordPress a Next.js, logrando mejoras sustanciales en rendimiento, velocidad de carga y experiencia de usuario general."
       },
       "descriptio": {
         "name": "Descriptio",
         "type": "Herramienta IA",
         "description": "Generador inteligente de descripciones utilizando inteligencia artificial, optimizado para múltiples casos de uso."
+      },
+      "ffdiamond": {
+        "name": "FFDiamond",
+        "type": "Plataforma E-commerce",
+        "description": "Plataforma para compra de diamantes de FreeFire desarrollada con Vite. Implementación de sistema de pagos con MercadoPago y Stripe, verificación de transferencias bancarias y panel de administración completo."
       }
     }
   },
@@ -116,35 +121,45 @@
   "skills": {
     "title": "Habilidades",
     "description": "Herramientas y tecnologías que uso para desarrollar productos modernos y escalables.",
-    "frontend": {
-      "title": "Frontend",
-      "description": "React, Next.js, Tailwind y diseño UI/UX."
+    "typescript": {
+      "title": "TypeScript & JavaScript",
+      "description": "Trabajo con ambos lenguajes según el proyecto, priorizando buenas prácticas y tipado estático con TypeScript."
     },
-    "backend": {
-      "title": "Backend",
-      "description": "Node.js, REST APIs, MongoDB y PostgreSQL."
+    "uiux": {
+      "title": "UI/UX & Diseño",
+      "description": "Diseño interfaces funcionales y modernas en Figma y las implemento con Tailwind, Shadcn o Angular Material."
     },
-    "fullstack": {
-      "title": "Full-Stack",
-      "description": "Productos escalables end-to-end."
+    "devops": {
+      "title": "DevOps & Deploy",
+      "description": "Uso Vercel, VPS con Nginx y Docker para deploy. Tengo experiencia en configuración y mantenimiento de entornos productivos."
     },
-    "design": {
-      "title": "Diseño UI",
-      "description": "Figma, wireframes y prototipado ágil."
+    "tools": {
+      "title": "Herramientas & Flujo de trabajo",
+      "description": "Git, GitHub, extensiones de VSCode, terminal y otras herramientas clave para un desarrollo ágil y profesional."
+    },
+    "architecture": {
+      "title": "Lógica & Arquitectura",
+      "description": "Diseño de estructuras de código escalables, patrones de diseño y arquitecturas de software que faciliten el mantenimiento y crecimiento de aplicaciones."
+    },
+    "automation": {
+      "title": "APIs & Automatizaciones",
+      "description": "Integración de APIs REST, automatización de procesos y desarrollo de scripts para optimizar flujos de trabajo y conectar sistemas."
     }
   },
   "contact": {
-    "title": "Ponte en Contacto",
+    "title": "Ponete en Contacto",
     "description": "Siempre estoy interesado en nuevas oportunidades, colaboraciones o simplemente una charla.",
     "location": "Buenos Aires — Disponible para freelance",
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn",
+    "twitter": "Twitter",
     "downloadCV": "Descargar CV",
     "inspirational": "Construyamos algo grandioso juntos."
   },
   "language": {
     "es": "Español",
     "en": "English"
-  }
+  },
+  "languageSelector": "Idioma"
 } 

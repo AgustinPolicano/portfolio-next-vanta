@@ -1,9 +1,9 @@
 // components/PortfolioContent.tsx
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import VantaEffect from "@/components/VantaEffect";
+import VantaEffect from "@/components/vantaEffect";
 import { ThemeProvider } from "@/components/theme-provider";
 import ExperienceTimeline from "@/components/ExperiencieTimeline";
 import ProjectsSection from "@/components/ProyectsSection";
@@ -11,6 +11,7 @@ import SkillsShowcase from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactoSection";
 import TopSocialNavbar from "@/components/TopSocialNavbar";
 import LanguageToggle from "@/components/ui/language-toggle";
+import LoadingScreen from "@/components/LoadingScreen";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Home as HomeIcon, Briefcase, Code, User, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,9 +27,19 @@ const navigation = [
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
   const [nextSection, setNextSection] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const { t } = useLanguage();
 
   const currentSection = nextSection || activeSection;
+
+  // Simular el tiempo de carga de los componentes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500); // 2.5 segundos de loading
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSectionChange = (section: string) => {
     if (section === activeSection || nextSection) return;
@@ -42,6 +53,15 @@ export default function Portfolio() {
     exit: { opacity: 0, x: 50 },
     transition: { duration: 0.4 },
   };
+
+  // Mostrar loading screen mientras isLoading es true
+  if (isLoading) {
+    return (
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <LoadingScreen />
+      </ThemeProvider>
+    );
+  }
 
   // Cada sección monta su propio fondo Vanta dentro del motion.section
   const renderSection = () => {

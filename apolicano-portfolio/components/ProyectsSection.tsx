@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import VantaEffectExperience from "./vantaEffect";
+import VantaEffectExperience from "./VantaEffect";
 import SectionHeader from "@/components/ui/section-header";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -18,10 +18,17 @@ export default function ProjectsShowcase() {
 
   const projects = [
     {
+      name: t("projects.items.ffdiamond.name"),
+      type: t("projects.items.ffdiamond.type"),
+      description: t("projects.items.ffdiamond.description"),
+      link: "https://ffdiamondzone.com/",
+      image: "/82fe305f7dbb9f25e68996f8f719e576.webp"
+    },
+    {
       name: t("projects.items.archivio.name"),
       type: t("projects.items.archivio.type"),
       description: t("projects.items.archivio.description"),
-      link: "https://github.com/tu-usuario/archivio",
+      link: "https://know-bot-landing.vercel.app/",
       image: "/ChatGPT Image 21 jun 2025, 13_41_26.webp"
     },
     {
@@ -51,7 +58,8 @@ export default function ProjectsShowcase() {
       description: t("projects.items.dakari.description"),
       link: "https://incendiocassi.com/",
       image: "/hero_dakari.webp"
-    }
+    },
+
   ];
 
   const onSelect = useCallback(() => {
@@ -91,7 +99,7 @@ export default function ProjectsShowcase() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-               className="snap-start shrink-0 basis-full sm:basis-full md:basis-[60%] lg:basis-[40%] rounded-2xl group border border-white/10 p-4 backdrop-blur bg-black/60 shadow-lg h-[350px] flex flex-col"
+               className="snap-start shrink-0 basis-full sm:basis-full md:basis-[60%] lg:basis-[40%] rounded-2xl group border border-white/10 p-4 backdrop-blur bg-black/60 shadow-lg"
 
               >
                 <Card className="bg-transparent border-none shadow-none flex-1 flex flex-col">
@@ -107,7 +115,7 @@ export default function ProjectsShowcase() {
                     <div className="space-y-1">
                       <h3 className="text-lg font-bold text-white leading-tight">{project.name}</h3>
                       <p className="text-xs text-red-500 font-medium">{project.type}</p>
-                      <p className="text-xs text-muted-foreground leading-relaxed line-clamp-4">{project.description}</p>
+                      <p className="text-xs text-muted-foreground leading-relaxed sm:line-clamp-4">{project.description}</p>
                     </div>
                     <a
                       href={project.link}
