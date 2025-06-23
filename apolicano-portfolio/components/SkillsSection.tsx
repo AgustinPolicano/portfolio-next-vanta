@@ -11,7 +11,7 @@ import {
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/ui/section-header";
 import { useLanguage } from "@/contexts/LanguageContext";
-import VantaEffectExperience from "./vantaEffectExperience";
+import "../styles/SkillsSection.css";
 
 const skills = [
   {
@@ -62,9 +62,9 @@ export default function SkillsShowcase() {
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 50 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.2 }}
     >
-      <VantaEffectExperience />
+
 
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col h-full">
         <SectionHeader 
@@ -96,7 +96,7 @@ export default function SkillsShowcase() {
         </div>
 
         {/* Pagination dots */}
-        <div className="mt-8 flex justify-center gap-2 h-[40px] items-center">
+        <div className="mobile-dots">
           {scrollSnaps.map((_, idx) => (
             <button
               key={idx}

@@ -1,0 +1,10 @@
+.mobile-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

@@ -68,14 +68,12 @@ export default function ProjectsShowcase() {
 
   return (
     <motion.section
-      key="projects"
-      className="relative h-screen px-6 py-20 bg-[#101014] text-white overflow-hidden"
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 50 }}
-      transition={{ duration: 0.4 }}
+    className="relative h-screen px-6 py-20 bg-[#101014] text-white overflow-hidden"
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: 50 }}
+    transition={{ duration: 0.2 }}
     >
-      <VantaEffectExperience />
 
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col h-full">
         <SectionHeader 
@@ -127,7 +125,7 @@ export default function ProjectsShowcase() {
         </div>
 
         {/* Pagination dots */}
-        <div className="mt-8 flex justify-center gap-2 h-[40px] items-center">
+        <div className="mt-8 mobile-dots">
           {scrollSnaps.map((_, idx) => (
             <button
               key={idx}

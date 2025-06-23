@@ -1,3 +1,29 @@
+
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+}
+
+.experienceSection {
+  position: relative;
+  padding: 5rem 1.5rem;
+  background-color: #101014;
+  color: white;
+  overflow: hidden;
+  height: 100vh;   
+}
+
+.experienceContainer {
+  position: relative;
+  z-index: 10;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;    
+}
+
+
 .mobile-carousel-container {
     padding: 0;
   }
@@ -69,14 +95,6 @@
     overflow: hidden;
   }
   
-  .mobile-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    height: 40px;
-    align-items: center;
-  }
-  
   .mobile-dot-button {
     width: 0.5rem;
     height: 0.5rem;
@@ -90,3 +108,13 @@
     transform: scale(1.1);
   }
   
+  .mobile-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

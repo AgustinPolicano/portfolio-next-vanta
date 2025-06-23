@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download, MapPin } from "lucide-react";
-import VantaEffectExperience from "./vantaEffectExperience";
 import SectionHeader from "@/components/ui/section-header";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -23,7 +22,6 @@ export default function ContactSection() {
       className="py-20 px-6 text-center flex flex-col items-center justify-center h-screen relative bg-[#101014]"
       {...pageTransition}
     >
-      <VantaEffectExperience />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

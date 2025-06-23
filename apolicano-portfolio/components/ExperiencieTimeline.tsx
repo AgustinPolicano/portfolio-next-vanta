@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
-import useEmblaCarousel from "embla-carousel-react";
-import { Calendar, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import VantaEffectExperience from "./vantaEffectExperience";
-import SectionHeader from "./ui/section-header";
-import "../styles/ExperiencieTimeline.css"; // Estilos custom para mobile
 import { useLanguage } from "@/contexts/LanguageContext";
+import useEmblaCarousel from "embla-carousel-react";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { Calendar, MapPin } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import "../styles/ExperiencieTimeline.css"; // Estilos custom para mobile
+import SectionHeader from "./ui/section-header";
 
 export default function ExperienceTimeline() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: "start" });
@@ -76,16 +75,10 @@ export default function ExperienceTimeline() {
   ];
 
   return (
-    <motion.section
-      key="experience"
-      className="relative px-6 pt-20 bg-[#101014] text-white overflow-hidden min-h-screen no-scrollbar"
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 50 }}
-      transition={{ duration: 0.4 }}
+    <section
+      className="experienceSection"
     >
-      <VantaEffectExperience />
-      <div className="relative z-10 max-w-6xl mx-auto flex flex-col h-full">
+      <div className="experienceContainer">
         <SectionHeader
           title={t("experience.title")}
           description={t("projects.description")}
@@ -196,6 +189,6 @@ export default function ExperienceTimeline() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

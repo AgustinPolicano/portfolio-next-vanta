@@ -1,31 +1,57 @@
 // components/VantaEffect.tsx
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import * as THREE from "three";
 // @ts-ignore
 import WAVES from "vanta/dist/vanta.waves.min";
 
-export default function VantaEffect() {
+interface VantaProps {
+  instanceKey: string;
+}
+
+export default function VantaEffect({ instanceKey }: VantaProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [vantaEffect, setVantaEffect] = useState<any>(null);
 
+  const effectRef = useRef<any>(null);
   useEffect(() => {
-    if (!vantaEffect && ref.current) {
-      setVantaEffect(
-        WAVES({
-          el: ref.current,
-          THREE,
-          color: 0x101014,
-          zoom: 0.7,
-          shiness: 100,
-          waveSpeed: 1,
-          backgroundColor: 0x101014,
-        })
-      );
+    console.log("mounted", instanceKey);
+    // Antes de crear nueva instancia, destruye la anterior si existe
+    if (effectRef.current) {
+      effectRef.current.destroy();
+      effectRef.current = null;
+      console.log("destruido");
+      console.log(instanceKey);
     }
-    return () => vantaEffect?.destroy?.();
-  }, [vantaEffect]);
 
-  return <div ref={ref} className="absolute top-0 left-0 w-full h-full z-0" />;
+    if (ref.current) {
+      const isHome = instanceKey === "home";
+      effectRef.current = WAVES({
+        el: ref.current,
+        THREE,
+        color: 0x101014,
+        zoom: 0.7,
+        shiness: isHome ? 100 : 0,
+        waveSpeed: isHome ? 1 : 0,
+        backgroundColor: 0x101014,
+      });
+    }
+
+    // Cleanup al desmontar el componente
+    return () => {
+      if (effectRef.current) {
+        effectRef.current.destroy();
+        effectRef.current = null;
+      }
+    };
+  }, [instanceKey]);
+
+  return (
+    console.log("render"),
+    <div
+      ref={ref}
+      className="absolute top-0 left-0 w-full h-full"
+      style={{ zIndex: 5 }}
+    />
+  );
 }
