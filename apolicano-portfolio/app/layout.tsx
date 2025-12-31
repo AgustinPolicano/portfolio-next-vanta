@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { LanguageProvider } from "@/contexts/LanguageContext"
 
@@ -25,6 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="CvTjbosWduAfY1kodFBe6g"
+          strategy="afterInteractive"
+        />
         <LanguageProvider>
           {children}
         </LanguageProvider>

@@ -7,4 +7,64 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
+}
+
+/* Skills Constellation Styles */
+.skills-constellation {
+    position: relative;
+    overflow: visible;
+}
+
+.skill-node {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.skill-node:hover {
+    z-index: 50;
+}
+
+.connection-line {
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Mobile skill cards enhancements */
+@media (max-width: 768px) {
+    .skill-node {
+        transform: none !important;
+    }
+    
+    .skills-constellation {
+        min-height: 600px;
+        overflow: visible;
+    }
+    
+    .skill-node {
+        touch-action: manipulation;
+    }
+    
+    /* Prevent horizontal scroll */
+    body {
+        overflow-x: hidden;
+    }
+    
+    .md\:hidden {
+        overflow-x: hidden !important;
+    }
+}
+
+/* Animation for connection lines */
+@keyframes pulse-connection {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Glow effect for active nodes */
+.skill-node:hover .connection-line {
+    animation: pulse-connection 2s ease-in-out infinite;
+}

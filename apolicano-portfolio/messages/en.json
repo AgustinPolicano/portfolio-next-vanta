@@ -31,6 +31,11 @@
         "type": "Corporate Website",
         "description": "Corporate website for a digital agency built with Next.js, focusing on marketing and web development services with modern and responsive design."
       },
+      "rankmycv": {
+        "name": "RankMyCv",
+        "type": "AI & CV Analysis",
+        "description": "Artificial intelligence tool that analyzes your CV and compares it with job descriptions or LinkedIn links. Performs LinkedIn job scraping and provides detailed compatibility analysis and improvement recommendations."
+      },
       "ecochoice": {
         "name": "EcoChoice",
         "type": "WordPress Optimization",
@@ -51,10 +56,22 @@
   "experience": {
     "title": "Experience",
     "jobs": {
+      "current": {
+        "company": "Almundo",
+        "role": "Software Engineer SSR",
+        "duration": "Sept 2025 - Present",
+        "location": "Buenos Aires, Argentina",
+        "responsibilities": [
+          "Frontend development in Angular.",
+          "Work with Node.js implementing BFF (Backend for Frontend) architecture to optimize communication between frontend and backend.",
+          "Use of Docker for application containerization and deployment.",
+          "Development and maintenance of internal Angular-based libraries, contributing to architecture and component reusability."
+        ]
+      },
       "techcorp": {
         "company": "Omint",
         "role": "SSR Frontend Developer",
-        "duration": "Mar 2023 - Present",
+        "duration": "Mar 2023 - Sept 2025",
         "location": "Buenos Aires, Argentina",
         "responsibilities": [
           "Development and maintenance of the Médico Online project, a telemedicine platform initiated before the pandemic.",
@@ -139,6 +156,38 @@
     "automation": {
       "title": "APIs & Automation",
       "description": "REST API integration, process automation and script development to optimize workflows and connect systems."
+    },
+    "react": {
+      "title": "React",
+      "description": "Development of interactive interfaces and reusable components with React, using hooks, context API and development best practices."
+    },
+    "nextjs": {
+      "title": "Next.js",
+      "description": "Fullstack application development with Next.js, leveraging SSR, SSG and API routes to create optimized web experiences."
+    },
+    "angular": {
+      "title": "Angular",
+      "description": "Experience in development with Angular, including components, services, routing and state management with RxJS."
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Backend server and API development with Node.js, Express and other JavaScript ecosystem technologies."
+    },
+    "python": {
+      "title": "Python",
+      "description": "Development of scripts, automations and tools with Python, including data processing and APIs."
+    },
+    "database": {
+      "title": "Databases",
+      "description": "Work with PostgreSQL, MongoDB and other relational and NoSQL databases to efficiently store and manage data."
+    },
+    "docker": {
+      "title": "Docker",
+      "description": "Application containerization with Docker, image creation and container orchestration for consistent deployments."
+    },
+    "git": {
+      "title": "Git & Version Control",
+      "description": "Code management with Git, GitHub, GitLab and Bitbucket. Experience in collaborative workflows, branching strategies and CI/CD."
     }
   },
   "contact": {
